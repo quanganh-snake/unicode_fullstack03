@@ -1,0 +1,30 @@
+.content {
+    width: 1200px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    background-color: #203441;
+    color: #fff;
+}
+
+.content:hover .btn{
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+}
+
+.content span {
+    color: rgb(255, 183, 0);
+}
+
+.content input {
+    padding: 10px 6px;
+    border-radius: 4px;
+    border: none;
+}
+
+.content .btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(255, 225, 0);
+}

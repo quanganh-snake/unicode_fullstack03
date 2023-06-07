@@ -1,0 +1,60 @@
+#title {
+    text-align: center;
+    color: red;
+    text-transform: capitalize !important;
+}
+
+.wrapper .container .content {
+    color: red;
+}
+
+.main .container .content {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.main .container .content > ul{
+    list-style: none;
+}
+
+.table {
+    width: 50%;
+    border: 1px solid #000;
+}
+
+.table-head p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table-head,
+.table-body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.table-head > p,
+.table-body > p {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.menu ul ul {
+    list-style: none;
+}
+
+.menu ul ul > li > a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: red;
+}
+
+h1.heading {
+    color: goldenrod;
+}
+
+h2.heading {
+    color: chocolate;
+}

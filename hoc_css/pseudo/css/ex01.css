@@ -1,0 +1,25 @@
+h1.title::after {
+    content: '___';
+    display: block;
+}
+
+h1.title::before {
+    content: '^^^';
+}
+
+.main p::first-letter{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.main p::selection {
+    background-color: red;
+    color: yellow;
+}
+
+input::placeholder {
+    text-decoration: underline;
+    font-weight: bold;
+    color: red;
+}

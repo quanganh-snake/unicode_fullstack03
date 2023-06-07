@@ -1,0 +1,21 @@
+p ~ ul {
+    background-color: #ccc;
+    color: #000;
+}
+
+.information ~ .children ul {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Áp dụng selector + */
+.lists p + ul {
+    background-color: crimson;
+    color: yellow;
+}
+
+/* Áp dụng selector ~ */
+.lists p ~ ul {
+    background-color: crimson;
+    color: yellow;
+}

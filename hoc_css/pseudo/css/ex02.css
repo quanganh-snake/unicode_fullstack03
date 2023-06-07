@@ -1,0 +1,65 @@
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    background-color: red;
+    color: yellow;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.btn:active {
+    background-color: #000;
+    color: yellow;
+}
+
+.txt_username, .txt_email {
+    outline: none;
+    padding: 12px 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.txt_username:focus {
+    border: none;
+    outline: none;
+    background-color: red;
+    color: yellow;
+    border-radius: 10px;
+}
+
+.txt_username:focus::placeholder{
+    color: yellow;
+}
+
+/* Cách 1: thành phần giả disable */
+.txt_email:disabled {
+    background-color: #000;
+}
+
+/* Cách 2: thành phần giả disable */
+.txt_email[disabled] {
+    background-color: red;
+}
+
+.txt_email[disabled]::placeholder {
+    color: yellow;
+}
+
+.products .item:not(.active){
+    color: red;
+}
+
+/* .list-books h2.book-item:first-child{
+    color: red;
+} */
+
+/* .list-books h2.book-item:first-of-type{
+    color: red;
+} */
+
+.list-books h2.book-item:nth-of-type(2n+2){
+    color: red;
+}
