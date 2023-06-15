@@ -1,0 +1,33 @@
+body {
+    /* background-color: yellow;
+    background-image: url('../images/300.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;  */
+    /*
+        background-size gồm: cover, tỷ lệ tuyệt đối, tương đối, contain
+        -> không viết chung trong background
+        -> cover => căn giữa khung nhìn
+        -> "contain" => height: 100% width: auto;
+        -> value1 value2 : value1 = chiểu rộng, value2: chiều cao
+            VD: background-size: 320px 430px; 
+    */
+
+    /* background-position: center; */
+    /*
+        background-position: set vị trí background
+        - value1 value2
+        - value1 -> căn trục X
+        - value2 -> căn trục Y
+    */
+    /* background-attachment: fixed;  */
+    /*
+        background-attachment: fixed; -> giữ nguyên khung nhìn với background
+    */
+    background: gold url('../images/300.jpg') no-repeat center fixed;
+    background-size: 20%;
+    min-height: 10000px;
+}
+
+h1 {
+    background-color: bisque;
+}

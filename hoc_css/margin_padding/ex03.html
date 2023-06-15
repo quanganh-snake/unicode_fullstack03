@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buổi 5: Thực hành tạo form</title>
+    <link rel="stylesheet" href="css/ex03.css" />
+  </head>
+  <body>
+    <div class="form-contact">
+      <div class="heading form-item">
+        <h1>Contact Us</h1>
+        <p>Please fill this form in a decent manner</p>
+      </div>
+      <form action="">
+        <div class="form-group">
+          <div class="fullname form-item">
+            <label id="fullname">
+              Full Name <span class="important">*</span>
+            </label>
+            <input class="form-control" id="fullname" type="text" />
+          </div>
+
+          <div class="email form-item">
+            <label id="email"> Email <span class="important">*</span> </label>
+            <input class="form-control" id="email" type="email" />
+            <p class="email-example">example@example.com</p>
+          </div>
+
+          <div class="message form-item">
+            <label id="message">
+              Message <span class="important">*</span>
+            </label>
+            <textarea
+              class="form-control"
+              name=""
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

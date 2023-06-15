@@ -1,0 +1,31 @@
+body {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.content {
+    color: blueviolet;
+}
+
+.content .title {
+    text-decoration: underline overline;
+    text-transform: uppercase;
+}
+
+.content p {
+    text-indent: 50px;
+
+}
+
+.content .link {
+    text-decoration: none;
+    padding: 6px 20px;
+    border: 1px solid rgba(216, 183, 247, 0.41);
+    border-radius: 10px;
+    outline: none;
+}
+
+.content .link:hover {
+    background-color: blueviolet;
+    color: #fff;
+}

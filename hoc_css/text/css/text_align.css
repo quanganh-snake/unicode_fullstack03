@@ -1,0 +1,27 @@
+.content {
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+}
+
+.signin {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.signin:hover {
+    background-color: red;
+}
+
+.signin:hover a {
+    
+    color: yellow;
+}
+
+.signin a{
+    text-decoration: none;
+    color: #000;
+}

@@ -1,0 +1,22 @@
+.content {
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(55, 8, 98);
+    border: 1px solid blueviolet;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

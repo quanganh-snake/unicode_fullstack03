@@ -1,0 +1,11 @@
+.header {
+    background-color: #ccc;
+}
+
+.header:hover h1.heading:nth-child(2n+1){
+    color: red;
+}
+
+header.header h1.heading:hover:nth-of-type(n) {
+    color: blueviolet;
+}

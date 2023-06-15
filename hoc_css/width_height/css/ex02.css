@@ -1,0 +1,10 @@
+.image {
+    width: 430px;
+    border: 1px solid blueviolet;
+}
+
+.image img {
+    width: 100px;
+    /* max-width: 200px; */
+    min-width: 200px;
+}

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans-Light.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans-Bold.ttf');
+    font-weight: 700;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(27, 49, 27);
+}
+
+.content {
+    font-size: 10px;
+}
+
+.content .first {
+    color: red;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content .second {
+    color: rgb(0, 238, 0);
+    font-size: 1rem;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    font-weight: 499;
+}
+
+.content .last {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

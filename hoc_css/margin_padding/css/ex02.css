@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    width: 300px;
+    border: 1px solid red;
+    padding: 30px;
+    margin: 30px;
+}

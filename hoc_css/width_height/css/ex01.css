@@ -1,0 +1,12 @@
+h1 {
+    border: 1px solid #ccc;
+    width: 50%;
+    height: 200px;
+}
+
+span {
+    display: block;
+    border: 1px solid red;
+    width: 50%;
+    height: 50%;
+}
