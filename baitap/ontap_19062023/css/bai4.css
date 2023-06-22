@@ -135,6 +135,10 @@ textarea::placeholder {
     margin-bottom: -4px;
 }
 
+.form-group .subject::placeholder {
+    color: #000;
+}
+
 .form-group .fa-star,
 .form-group .close {
     position: absolute;
