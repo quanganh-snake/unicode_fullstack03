@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Alfa Slab One;
+    src: url('../fonts/AlfaSlabOne-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url('../fonts/BebasNeue-Regular.ttf');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: BebasNeue;
+}
+
+input {
+    border: 1px solid #ccc;
+}
+
+input:focus {
+    border: none;
+    outline: 1px solid #5b5b5b;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 100%;
+    margin: 50px auto;
+}
+
+
+.form-box .form-smalltitle,
+.form-box h1.form-bigtitle {
+    color: rgb(58, 44, 27);
+}
+
+.form-box h1.form-bigtitle,
+.form-box button.btn {
+    font-family: Alfa Slab One;
+}
+
+h1.form-bigtitle {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+.form-box input.form-control,
+.form-box button.btn {
+    /* margin-left: 24px; */
+    margin-bottom: 24px;
+    padding: 16px 24px;
+    width: 100%;
+}
+
+.form-box button.btn {
+    background-color: rgb(188, 33, 33);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-box button.btn:hover {
+    opacity: 0.6;
+}
+
+.form-box input.form-control::placeholder {
+    font-family: BebasNeue;
+    color: rgb(132, 129, 124);
+}
+
+.test {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.test > .form-group {
+    display: flex;
+    margin: 0 0 24px 0;
+    width: 100%;
+    /* margin-left: 24px; */
+}
+
+.test > .form-group > .form-control {
+    margin:0 12px;
+    width: 50%;
+}
+
+
+

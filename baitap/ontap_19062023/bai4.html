@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ôn tập 19/06/2023 - Bài 4</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/bai4.css" />
+	</head>
+	<body>
+		<div class="contact-box">
+			<div class="container">
+				<div class="contact__inner">
+					<div class="contact-header">
+						<h1 class="header-title">Hey there</h1>
+						<p class="header-desc"><span>We'd like to hear from you.</span> Send us your message or just say hy with our contact form or directly via phone, we love to chat</p>
+					</div>
+					<!--End .contact-header-->
+					<div class="contact-form">
+						<form action="">
+							<div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your name" required oninvalid="this.setCustomValidity('Enter your name')"
+                                oninput="setCustomValidity('')" />
+								<i class="fa-solid fa-user form-icon"></i>
+								<i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-xmark close"></i>
+							</div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="your@domain.com" />
+								<i class="fa-solid fa-envelope form-icon"></i>
+								<i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-xmark close"></i>
+							</div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="+44 00 123" />
+								<i class="fa-solid fa-envelope form-icon"></i>
+                                <i class="fa-solid fa-xmark close"></i>
+							</div>
+                            <div class="form-group">
+                                <input type="number" class="form-control subject" placeholder="Subject" />
+								<i class="fa-solid fa-envelope form-icon"></i>
+							</div>
+                            <div class="form-group">
+                                <textarea name="" class="form-control message" rows="10" placeholder="Message"></textarea>
+								<i class="fa-solid fa-envelope form-icon"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-xmark close"></i>
+							</div>
+                            <div class="form-action">
+                                <label class="action-checked">
+                                    <input type="checkbox" class="send-checkbox" name="" id="send-copy">
+                                    <label class="lbl-checkbox" for="send-copy"></label>
+                                    Send me a copy of this message
+                                </label>
+                                <button class="btn">Send</button>
+                            </div>
+						</form>
+					</div>
+				</div>
+				<!--End .contact__inner-->
+			</div>
+		</div>
+		<!--End .contact-box-->
+	</body>
+</html>

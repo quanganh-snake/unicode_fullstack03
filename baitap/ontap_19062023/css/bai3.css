@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato-Black.ttf');
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: Lato;
+}
+
+p {
+    padding: 10px 0;
+}
+
+.btn {
+    padding: 16px 24px;
+    background-color: #edac3c;
+    color: #ffffff;
+    width: 70%;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.service-box {
+    width: 100%;
+    margin: 100px 0;
+}
+
+.service__inner {
+    width: 100%;
+    margin: 0 32px;
+}
+
+.service__header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service__header .header-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.service__main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.service-lists {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 340px;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-item span.item-image {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #df9b24;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: #df9b24;
+    margin: 0 auto 24px;
+}
+
+.service-item .item-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.item-desc {
+    text-align: center;
+    margin-bottom: 24px;
+}
+

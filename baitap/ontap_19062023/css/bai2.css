@@ -1,0 +1,75 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url('../fonts/Lato-Regular.ttf');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: BebasNeue;
+    clear: both;
+}
+
+input {
+    display: none;
+}
+
+.container {
+    width: 990px;
+    margin: 50px auto;
+}
+
+.active:hover {
+    display: none;
+}
+
+.unactive {
+    display: none;
+}
+
+.active:hover ~ .unactive {
+    display: block;
+}
+
+.content .title {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(255, 111, 0);
+    padding: 10px 6px;
+    margin-bottom: 16px;
+}
+
+.content .paragraph {
+    margin-bottom: 24px;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.content .paragraph::first-letter {
+    margin-left: 20px;
+}
+
+.content .title::before {
+    content: '+';
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.content input[type="checkbox"]:checked ~ .title::before {
+    content: '-';
+}
+
+.content input[type="checkbox"]:checked ~ .unactive {
+    display: block;
+}

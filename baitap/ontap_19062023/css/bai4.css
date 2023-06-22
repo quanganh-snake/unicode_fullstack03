@@ -1,0 +1,205 @@
+@font-face {
+    font-family: Labster;
+    src: url('../fonts/Lobster-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato-Bold.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato-Black.ttf');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: Lato;
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: Lato;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 10px 30px;
+    background-color: red;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box {
+    margin: 60px auto;
+    width: 540px;
+}
+
+.contact__inner {
+
+}
+
+.contact-header {
+    margin-bottom: 40px;
+}
+
+.contact-header .header-title {
+    font-family: Labster;
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+}
+
+.contact-header .header-desc {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+.contact-header .header-desc > span {
+    color: rgb(227, 22, 22);
+}
+
+.contact-form {
+
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.form-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control {
+    padding: 16px 60px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-group .form-icon {
+    position: absolute;
+    padding: 14px;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 1.4rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.form-group .form-control:focus ~ .form-icon {
+    background-color: #000;
+    color: #fff;
+}
+
+.form-group .message {
+    margin-bottom: -4px;
+}
+
+.form-group .fa-star,
+.form-group .close {
+    position: absolute;
+    padding: 17px;
+    top: 0;
+    right: 0;
+    color: #ccc;
+}
+
+.form-group .close {
+    display: none;
+}
+
+.form-group .form-control:focus ~ .fa-star {
+    display: none;
+}
+
+.form-group .form-control:focus ~ .close {
+    display: inline-block;
+}
+
+.form-action input[type="checkbox"]#send-copy {
+    width: 16px;
+    height: 16px;
+    padding: 6px;
+    border: 1px solid #eee;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-action input.send-checked:checked {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ccc;
+}
+
+.action-checked {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #979797;
+}
+
+.lbl-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border: 2px solid #ccc;
+}
+
+.send-checkbox:checked ~ .lbl-checkbox::before {
+    content: '✔';
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-weight: bold;
+}
+
+.send-checkbox {
+    display: none;
+}
