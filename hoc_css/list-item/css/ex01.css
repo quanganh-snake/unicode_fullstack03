@@ -1,0 +1,46 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 500px;
+    margin: 100px auto;
+    border: 1px solid red;
+}
+
+.box ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin: 24px;
+}
+
+.box ul li {
+    /* background: url('../images/ico-right.png') no-repeat left center; */
+    /* background-size: 14px 14px;
+    padding-left: 20px;
+    line-height: 2; */
+    
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.box ul li a::before {
+    font-family: 'Font Awesome 6 Brands';
+}
+
+.box ul li.google a::before {
+    content: "\f1a0";
+}
+
+.box ul li.facebook a::before {
+    content: "\f09a";
+}
+
+.box ul li.instagram a::before {
+    content: "\f16d";
+}

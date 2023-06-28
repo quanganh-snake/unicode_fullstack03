@@ -1,0 +1,43 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 800px;
+    margin   : 140px auto;
+    border   : 1px solid red;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear  : both;
+}
+
+.col-1 {
+    width     : 300px;
+    height    : 200px;
+    background: red;
+    color     : #fff;
+    font-size : 2rem;
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}
+
+.col-2 {
+    width     : 300px;
+    height    : 200px;
+    background: rgb(37, 3, 3);
+    color     : #fff;
+    font-size : 2rem;
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}

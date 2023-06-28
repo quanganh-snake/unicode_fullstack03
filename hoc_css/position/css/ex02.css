@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-info {
+    position: relative;
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.product-info .info {
+    position: relative;
+    z-index: 1;
+}
+
+.product-info .overlay {
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    inset: 0;
+    background-color: #c6c6c6;
+    display: none;
+}
+
+.product-info:hover .overlay {
+    display: block;
+}
