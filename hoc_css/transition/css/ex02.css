@@ -1,0 +1,49 @@
+.btn-wrap {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.btn-wrap .btn {
+    border: none;
+    background-color: green;
+    color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 99px;
+    position: relative;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius:99px 0 0 99px;
+    background-color: red;
+    transition: all 0.6s linear;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 99px 99px 0;
+    background-color: yellow;
+    transition: all 0.6s linear;
+}
+
+.btn:hover::before {
+    right: 50%;
+}
+
+.btn:hover::after {
+    right: 50%;
+}
+
+.btn-wrap .btn span {
+    position: relative;
+    z-index: 1;
+}

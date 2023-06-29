@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 720px;
+    margin: 134px auto;
+}
+
+.container .contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 200px;
+}
+
+.contact-us .image-item img {
+    width: 80px;
+}
+
+.image-item {
+    flex-basis: calc(100%/5);
+}

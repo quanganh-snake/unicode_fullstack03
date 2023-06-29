@@ -1,0 +1,135 @@
+@font-face {
+    font-family: BeVietNam;
+    src: url('../fonts/BeVietNam.woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: BeVietNam;
+    src: url('../fonts/BeVietNam_Bold.woff2');
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: BeVietNam, sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.benefit-box {
+    margin: 50px 0;
+}
+
+.benefit-box .benefit-title {
+    text-align: center;
+    color: #14368B;
+    margin-bottom: 80px;
+}
+
+.benefit-box .benefit-title span {
+    color: #DF2C60;
+}
+
+.benefit-title .title-unerline {
+    margin-top: -10px;
+}
+
+.benefit-title .title-unerline span.unerline::before,
+.benefit-title .title-unerline span.unerline.middle::before {
+    content: '';
+    display: inline-block;
+    width: 34px;
+    height: 3px;
+    background-color: #DF2C60;
+    border-radius: 10px;
+}
+
+.benefit-title .title-unerline span.unerline.middle::before {
+    width: 20px;
+}
+
+.benefit-lists {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.benefit-lists .item__inner {
+    display: flex;
+    align-items: stretch;
+    width: calc(100%/3);
+    flex-basis: calc(100%/3);
+    padding: 0 16px;
+}
+
+.benefit-lists .item__inner:nth-child(4),
+.benefit-lists .item__inner:nth-child(5){
+    flex-grow: 0.2;
+}
+
+.benefit-lists .benefit-item {
+    width: 100%;
+    padding: 100px 20px;
+    position: relative;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 30px rgba(215, 228, 249, 0.5);
+    border-radius: 20px;
+}
+
+.benefit-item .item-image {
+    position: absolute;
+    top: -50px;
+    left: 38%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px rgba(43, 88, 214, 0.15);
+}
+
+.benefit-item .item-image img {
+    width: 90px;
+    height: 90px;
+}
+
+.benefit-item .item-content{
+    position: relative;
+}
+
+.benefit-item .item-content .item-quantity {
+    position: absolute;
+    font-size: 10rem;
+    color: #EFF2FC;
+    z-index: 1;
+    top: -60px;
+    right: -28px;
+}
+
+.item-content .item-heading {
+    text-transform: uppercase;
+    font-size: 1.42rem;
+    color: #14368b;
+    margin-bottom: 15px;
+}
+
+.item-content .item-desc {
+    position: relative;
+    z-index: 2;
+}
+
+.item-content p {
+    margin-bottom: 15px;
+    font-size: 1.14rem;
+}

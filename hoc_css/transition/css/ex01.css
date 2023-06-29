@@ -1,0 +1,22 @@
+.box {
+    font-size: 1rem;
+    
+}
+
+.box h1 {
+    /* transform-property: padding-left, color; */
+    /* transition-duration: 1s; */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    /* transition: padding-left 0.5s ease-in-out; */
+    /* muốn tác động nhiều property - tách riêng thuộc tính transform-property*/
+    transform-property: padding-left, color;
+    transition: 0.4s linear;
+}
+
+.box h1:hover {
+    padding-left: 30px;
+    color: red;
+}
