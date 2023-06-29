@@ -1,18 +1,18 @@
 @font-face {
     font-family: BeVietNam;
-    src: url('../fonts/BeVietNam.woff2');
+    src        : url('../fonts/BeVietnamPro-Regular.ttf');
     font-weight: normal;
 }
 
 @font-face {
     font-family: BeVietNam;
-    src: url('../fonts/BeVietNam_Bold.woff2');
+    src        : url('../fonts/BeVietnamPro-Bold.ttf');
     font-weight: 500;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
 
@@ -26,7 +26,7 @@ body {
 
 .container {
     max-width: 1140px;
-    margin: 0 auto;
+    margin   : 0 auto;
 }
 
 .benefit-box {
@@ -34,8 +34,9 @@ body {
 }
 
 .benefit-box .benefit-title {
-    text-align: center;
-    color: #14368B;
+    text-align   : center;
+    font-size    : 1.85rem;
+    color        : #14368B;
     margin-bottom: 80px;
 }
 
@@ -49,12 +50,12 @@ body {
 
 .benefit-title .title-unerline span.unerline::before,
 .benefit-title .title-unerline span.unerline.middle::before {
-    content: '';
-    display: inline-block;
-    width: 34px;
-    height: 3px;
+    content         : '';
+    display         : inline-block;
+    width           : 34px;
+    height          : 3px;
     background-color: #DF2C60;
-    border-radius: 10px;
+    border-radius   : 10px;
 }
 
 .benefit-title .title-unerline span.unerline.middle::before {
@@ -62,74 +63,82 @@ body {
 }
 
 .benefit-lists {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    width          : 100%;
+    display        : flex;
+    flex-wrap      : wrap;
     justify-content: center;
-    align-items: stretch;
+    align-items    : stretch;
 }
 
 .benefit-lists .item__inner {
-    display: flex;
+    display    : flex;
     align-items: stretch;
-    width: calc(100%/3);
-    flex-basis: calc(100%/3);
-    padding: 0 16px;
+    width      : calc(100%/3);
+    flex-basis : calc(100%/3);
+    padding    : 0 16px;
 }
 
 .benefit-lists .item__inner:nth-child(4),
-.benefit-lists .item__inner:nth-child(5){
+.benefit-lists .item__inner:nth-child(5) {
     flex-grow: 0.2;
 }
 
 .benefit-lists .benefit-item {
-    width: 100%;
-    padding: 100px 20px;
-    position: relative;
+    width        : 100%;
+    padding      : 100px 20px 30px;
+    position     : relative;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 30px rgba(215, 228, 249, 0.5);
+    box-shadow   : 0px 0px 30px rgba(215, 228, 249, 0.5);
     border-radius: 20px;
 }
 
 .benefit-item .item-image {
-    position: absolute;
-    top: -50px;
-    left: 38%;
+    position     : absolute;
+    top          : -50px;
+    /* transform : translateY(-125%); */
+    left         : 0;
+    right        : 0;
+    margin       : 0 auto;
     border-radius: 50%;
-    box-shadow: 0px 0px 5px 5px rgba(43, 88, 214, 0.15);
+    box-shadow   : 0px 0px 5px 5px rgba(43, 88, 214, 0.15);
 }
 
+.benefit-item .item-image,
 .benefit-item .item-image img {
-    width: 90px;
-    height: 90px;
+    width        : 120px;
+    height       : 120px;
+    border-radius: 50%;
 }
 
-.benefit-item .item-content{
+.benefit-item .item-content {
     position: relative;
 }
 
 .benefit-item .item-content .item-quantity {
-    position: absolute;
-    font-size: 10rem;
-    color: #EFF2FC;
-    z-index: 1;
-    top: -60px;
-    right: -28px;
+    position   : absolute;
+    font-size  : 10rem;
+    color      : #2b59d625;
+    font-weight: 700;
+    z-index    : 1;
+    top        : -60px;
+    right      : -28px;
 }
 
 .item-content .item-heading {
     text-transform: uppercase;
-    font-size: 1.42rem;
-    color: #14368b;
-    margin-bottom: 15px;
+    font-size     : 1.42rem;
+    color         : #14368b;
+    margin-bottom : 15px;
 }
 
+.item-content .item-heading,
 .item-content .item-desc {
     position: relative;
-    z-index: 2;
+    z-index : 2;
 }
 
 .item-content p {
     margin-bottom: 15px;
-    font-size: 1.14rem;
+    font-size    : 1.14rem;
+    line-height  : 1.5;
 }
