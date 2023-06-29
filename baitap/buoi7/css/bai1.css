@@ -121,7 +121,7 @@ body {
     font-weight: 700;
     z-index    : 1;
     top        : -60px;
-    right      : -28px;
+    right      : -10px;
 }
 
 .item-content .item-heading {
@@ -139,6 +139,7 @@ body {
 
 .item-content p {
     margin-bottom: 15px;
+    text-align   : justify;
     font-size    : 1.14rem;
     line-height  : 1.5;
 }
