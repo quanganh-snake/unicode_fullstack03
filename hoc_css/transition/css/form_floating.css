@@ -1,0 +1,55 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width : 400px;
+    margin: 50px auto;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 20px 16px 8px;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.form-group input:focus {
+    outline: 1px solid blueviolet;
+}
+
+.form-group input:valid,
+.form-group input:focus {
+    padding: 26px 16px 16px;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label{
+    font-size: 10px;
+    color: red;
+    top: -40px;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    transition: all 0.1s linear;
+}

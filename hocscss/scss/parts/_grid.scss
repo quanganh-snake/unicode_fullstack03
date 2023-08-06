@@ -1,0 +1,50 @@
+// Vòng lặp @for trong SCSS
+$maxColumn: 12;
+
+@for $i from 1 through $maxColumn {
+    .col-#{$i} {
+        width  : calc(100%/$i);
+        padding: 0;
+    }
+}
+
+// Vòng lặp @each trong SCSS
+$sizes: 20 40 60;
+
+@each $size in $sizes {
+    .item-#{$size} {
+        font-size: calc($size/10)+rem;
+    }
+}
+
+$fontSize: (small, 0.6rem, normal),
+(regular, 1rem, normal),
+(medium, 1.2rem, italic),
+(large, 1.4rem, bold);
+
+@each $type,
+$size,
+$style in $fontSize {
+    .text-#{$type} {
+        font-size: $size;
+        padding  : 0 $size / 2;
+
+        @if ($style=='bold') {
+            font-weight: $style;
+        }
+
+        @else {
+            font-style: $style;
+        }
+    }
+}
+
+//TH chỉ có 2 giá trị:
+$colors: (primary: red, secondary: green, light: blue);
+
+@each $color,
+$value in $colors {
+    .bg-#{$color} {
+        color: $value;
+    }
+}

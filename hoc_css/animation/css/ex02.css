@@ -1,0 +1,45 @@
+@keyframes runtext {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    height: 50px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid red;
+    overflow: hidden;
+    position: relative;
+
+    
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;   
+    position: absolute; 
+
+    animation-name: runtext;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.content span {
+    display: inline;
+    flex-shrink: 0;
+    
+}

@@ -1,0 +1,126 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size  : 1.6rem;
+}
+
+img {
+    max-width: 100%;
+    height   : auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color          : #2c3e50;
+}
+
+.container {
+    --container-space: 15px;
+    max-width        : 1200px;
+    padding          : 0 var(--container-space);
+    margin           : 0 auto;
+}
+
+.header {
+    padding : 10px 0;
+    position: relative;
+}
+
+.header .header-inner {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.header-inner .header-logo {
+    --column-logo: 10;
+    flex-basis   : calc(100%/var(--column-logo));
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.menu-toggle {
+    --column-menu-toggle: 2;
+}
+
+.menu-toggle::after {
+    content    : '\f0c9';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked~.header-menu {
+    /* display  : block; */
+    transform: translateX(0);
+}
+
+.header-inner .header-menu {
+    --column-menu   : 1;
+    flex-basis      : calc(100%/var(--column-menu));
+    background-color: #ddd;
+    width           : 100vw;
+    height          : 100vh;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    transform       : translateX(-101%);
+
+    transition: transform 0.2s linear;
+}
+
+.header-menu ul {
+    display       : flex;
+    background    : #000;
+    width         : 40vw;
+    height        : 100vh;
+    flex-direction: column;
+    flex-wrap     : wrap;
+}
+
+.header-menu ul li a {
+    display    : block;
+    color      : #fff;
+    padding    : 16px 20px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 992px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .header-inner .header-menu {
+        display      : block;
+        background   : transparent;
+        right        : 0;
+        transform    : none;
+        width        : 0;
+        --column-menu: 4;
+    }
+
+    .header-menu ul {
+        background    : transparent;
+        flex-direction: row;
+    }
+}

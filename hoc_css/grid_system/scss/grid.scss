@@ -1,0 +1,49 @@
+$numberColumn: 12;
+$breakPoints : (sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-width: 1200px;
+    --column-space   : 20px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin   : 0 auto;
+}
+
+.row {
+    display  : flex;
+    flex-wrap: wrap;
+    margin   : 0 calc(-1 * var(--column-space) / 2);
+}
+
+.row [class^="col-"] {
+    --column-width: calc(100% / (12/var(--column-number)));
+    flex-basis    : var(--column-width);
+    max-width     : var(--column-width);
+    padding       : 0 calc(var(--column-space)/2);
+    margin-bottom : var(--column-space);
+}
+
+@for $i from 1 through $numberColumn {
+    .col-#{$i} {
+        --col-number: #{$i};
+    }
+}
+
+@each $breakPoint,
+$width in $breakPoints {
+    @media screen and (min-width: $width) {
+        @for $i from 1 through $numberColumn {
+            .col-#{$breakPoint}-#{$i} {
+                --col-number: #{$i};
+            }
+        }
+    }
+}

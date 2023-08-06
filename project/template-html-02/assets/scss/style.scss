@@ -1,0 +1,9 @@
+@import './parts/fonts';
+@import './parts/variables';
+@import './parts/reset';
+@import './parts/base';
+@import './parts/mixin';
+
+//Layout
+@import './layouts/header';
+@import './pages/product-details';

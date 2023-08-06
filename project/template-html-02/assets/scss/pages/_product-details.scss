@@ -1,0 +1,29 @@
+.product-details {
+    .details-images {
+        gap: 22.68px;
+
+        .image-item {
+            width        : 68px;
+            height       : 68px;
+            border-radius: 8px;
+
+
+            img {
+                display      : block;
+                border-radius: 8px;
+                width        : 100%;
+                height       : 100%;
+                object-fit   : cover;
+            }
+        }
+    }
+
+    .details-thumbnail {
+        height: 750px;
+
+        img {
+            height    : 100%;
+            object-fit: cover;
+        }
+    }
+}

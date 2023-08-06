@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    width: 100px;
+    border: 1px solid green;
+    border-radius: 99px;
+    padding: 10px 8px;
+    margin: 50px auto;
+}
+
+.btn:hover {
+    background: green;
+    color: #fff;
+}

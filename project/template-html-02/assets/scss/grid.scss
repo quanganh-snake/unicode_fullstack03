@@ -1,0 +1,256 @@
+$grid-columns     : 12;
+$grid-breakpoints: (sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
+
+:root {
+    --container-width     : 1326px;
+    --column-spacing      : 20px;
+    --column-small-spacing: 10px;
+    --column-max          : #{$grid-columns};
+}
+
+.container {
+    max-width: var(--container-width);
+    margin   : 0 auto;
+    padding  : 0 15px;
+}
+
+.row {
+    display        : flex;
+    flex-wrap      : wrap;
+    column-gap     : var(--column-spacing);
+    justify-content: space-between;
+}
+
+.row.row-small {
+    row-gap: var(--column-small-spacing);
+}
+
+.row.row-medium {
+    row-gap: var(--column-spacing);
+}
+
+.row.column-small {
+    column-gap: var(--column-small-spacing);
+}
+
+.row.column-collapse {
+    column-gap: 0;
+}
+
+.row.column-small>[class^="col-"] {
+    --column-width: calc(100% / var(--column-max) * var(--column-size) - var(--column-small-spacing));
+}
+
+.row.column-collapse>[class^="col-"] {
+    --column-width: calc(100% / var(--column-max) * var(--column-size));
+}
+
+@mixin grid($type:'') {
+    @for $i from 1 through $grid-columns {
+        $className: '.col-#{$type}-#{$i}';
+
+        @if($type=='') {
+            $className: '.col-#{$i}';
+        }
+
+        #{$className} {
+            --column-size: #{$i};
+
+            @if($i !=12) {
+                --max-width-column: calc(100% / var(--column-max) * var(--column-size) - var(--column-spacing));
+            }
+
+            @else {
+                --max-width-column: calc(100% / var(--column-max) * var(--column-size));
+            }
+
+            max-width : var(--max-width-column);
+            flex-basis: var(--max-width-column);
+        }
+    }
+}
+
+@include grid();
+
+@each $type,
+$width in $grid-breakpoints {
+    @media screen and (min-width: $width) {
+        @if($type=='xxl') {
+            .container {
+                padding: 0;
+            }
+        }
+
+        @include grid($type);
+    }
+}
+
+//***SETTING OPTIONS FOR ROWS***
+
+//****DISPLAY ****
+$display: flex,
+block,
+inline,
+inline-block,
+none,
+inline-flex;
+
+@mixin display($type:'', $options) {
+    $className: '.d-#{$type}-#{$options}';
+
+    @if($type=='') {
+        $className: '.d-#{$options}';
+    }
+
+    #{$className} {
+        display: $options;
+    }
+}
+
+@each $option in $display {
+    @include display('', $option)
+}
+
+@each $type,
+$width in $grid-breakpoints {
+    @media screen and (min-width: $width) {
+        @include display($type, flex);
+        @include display($type, block);
+        @include display($type, inline);
+        @include display($type, inline-block);
+        @include display($type, none);
+        @include display($type, inline-flex);
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+//****Flex-Direction****
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+//****JUSTIFY-CONTENT****
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+//****ALIGN-ITEMS****
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+//****Align-Self****
+.align-self-auto {
+    align-self: auto !important;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.align-self-center {
+    align-self: center !important;
+}
+
+.align-self-baseline {
+    align-self: baseline !important;
+}
+
+.align-self-stretch {
+    align-self: stretch !important;
+}
+
+//****Offset****
+@mixin offset-grid($type:'') {
+    @for $i from 0 through 11 {
+        $classOffset: '.offset-#{$type}-#{$i}';
+
+        @if($type=='') {
+            $classOffset: '.offset-#{$i}';
+        }
+
+        #{$classOffset} {
+            margin-left: calc(100 / 12 * $i) * 1%;
+        }
+    }
+}
+
+@include offset-grid();
+
+@each $type,
+$with in $grid-breakpoints {
+    @media screen and (min-width: $with) {
+        @include offset-grid($type);
+    }
+}

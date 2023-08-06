@@ -1,0 +1,26 @@
+.animate__fadeInRightBig {
+    animation-duration: 2s;
+}
+
+.animate__fadeInLeft, .animate__rotateInDownLeft {
+    animation-duration: 2s;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.conatiner .image {
+    flex-basis: calc(100%/4);
+    animation: fadeInLeft infinite linear;
+}

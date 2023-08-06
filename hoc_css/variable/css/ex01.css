@@ -1,0 +1,40 @@
+:root {
+    --primary-color  : red;
+    --secondary-color: blue;
+    --white-color: white;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.content {
+    --third-color: green;
+    --font-size  : 10px;
+    border       : 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding      : 20px;
+}
+
+.content h2 {
+    color    : var(--third-color);
+    font-size: calc(var(--font-size)*1.2rem);
+}
+
+.content .text {
+    color: var(--secondary-color);
+}
+
+.content .btn {
+    background-color: var(--third-color);
+    color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 99px;
+    border: none;
+}
+
+.content .btn:hover {
+    background: var(--primary-color);
+    color: yellow;
+    cursor: pointer;
+}

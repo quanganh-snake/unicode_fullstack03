@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle {
+    width: 500px;
+    border: 1px solid red;
+    margin: 80px auto;
+    padding: 50px;
+}
+
+.toggle > label {
+    display: block;
+    width: 50px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    position: relative;
+}
+
+.toggle label > input {
+    display: none;
+}
+
+.toggle label > span:first-of-type::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: calc(100% - 18px);
+    top: 2px;
+    transition: all 0.3s linear;
+    z-index: 1;
+}
+
+.toggle label > span:last-of-type {
+    position: absolute;
+    inset: 0;
+    background-color: green;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.toggle label > input:checked ~ span:first-of-type::before {
+    right: 2px;
+}
+
+
+.toggle label > input:checked ~ span:last-of-type {
+    opacity: 1;
+}

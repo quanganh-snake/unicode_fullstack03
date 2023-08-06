@@ -1,0 +1,48 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    user-select: none;
+}
+
+body {}
+
+.content {
+    padding   : 20px;
+    text-align: justify;
+}
+
+@keyframes outhover {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        color              : red;
+        opacity            : 1;
+        font-size          : 2rem;
+        font-weight        : normal;
+        transition-property: opacity font-weight font-size;
+        transition         : 0.2s linear;
+    }
+
+    .content:hover {
+        font-size  : 0.6rem;
+        font-weight: 600;
+        opacity    : 0.6;
+        animation  : outhover 2s linear;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        color: green;
+    }
+}
