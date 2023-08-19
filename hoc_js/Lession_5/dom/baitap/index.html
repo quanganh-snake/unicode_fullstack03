@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DOM - BT1</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<button id="btn-login" class="btn">Login</button>
+		<div class="container d-none">
+			<div class="form d-none">
+				<a href="#" class="btn-close">
+					<i class="fa-regular fa-circle-xmark"></i>
+				</a>
+				<div class="form-header">
+					<a href="#" id="sign-in" class="active">Đăng nhập</a>
+					<a href="#" id="sign-up">Tạo tài khoản</a>
+				</div>
+				<!--End .form-header-->
+				<div class="form-main">
+					<div class="form-sign">
+						<div class="sign-in">
+							<p class="text-heading">Đăng nhập với email</p>
+							<form action="">
+								<div class="form-group">
+									<input type="email" placeholder="Email" />
+								</div>
+								<div class="form-group password">
+									<input name="password" type="password" placeholder="Mật khẩu" />
+									<i class="fa-solid fa-eye"></i>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn w-100">Đăng nhập</button>
+								</div>
+								<div class="form-group">
+									<a href="#">Lấy lại mật khẩu</a>
+								</div>
+							</form>
+						</div>
+						<div class="sign-up d-none">
+							<p>Tạo tài khoản VnExpress<br />Để sử dụng đầy đủ tính năng đọc báo và tham gia cộng đồng hơn 8 triệu thành viên</p>
+							<form action="">
+								<div class="form-group">
+									<input type="email" placeholder="Nhập email" />
+								</div>
+								<div class="form-group password">
+									<input name="password" type="password" placeholder="Tạo mật khẩu" />
+									<i class="fa-solid fa-eye"></i>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn w-100">Tạo tài khoản</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="login-other">
+						<p class="text-heading">Đăng nhập với</p>
+						<ul>
+							<li>
+								<a href="#" class="btn-social">
+									<i class="fa-brands fa-facebook-f"></i>
+									<span>Facebook</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="btn-social">
+									<i class="fa-brands fa-google"></i>
+									<span>Google</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="btn-social">
+									<i class="fa-brands fa-apple"></i>
+									<span>Apple</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--End .form-main-->
+				<div class="form-footer">
+					<p>Sản phẩm, dịch vụ bạn có thể sử dụng với tài khoản VnExpress</p>
+					<div class="brand-list">
+						<ul>
+							<li>
+								<a href="#"><img src="https://s1.vnecdn.net/myvne/i/v195/ls/graphics/vne_international.svg" alt="" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="https://s1.vnecdn.net/myvne/i/v195/ls/graphics/Ngoisao.svg" alt="" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="https://s1.vnecdn.net/myvne/i/v195/ls/graphics/Marathon.svg" alt="" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="https://s1.vnecdn.net/myvne/i/v195/ls/graphics/VRace.svg" alt="" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="https://s1.vnecdn.net/myvne/i/v195/ls/graphics/Ebox.svg" alt="" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="https://s1.vnecdn.net/myvne/i/v195/ls/graphics/Startup.svg" alt="" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--End .form-footer-->
+			</div>
+			<!--End .form-->
+		</div>
+		<!--End .container-->
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
