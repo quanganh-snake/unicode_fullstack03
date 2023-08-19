@@ -29,9 +29,11 @@ document.addEventListener("keyup", function (e) {
 	}
 });
 
-containerObj.addEventListener("click", function () {
-	containerObj.classList.add("d-none");
-});
+window.onclick = function (e) {
+	if (e.target == containerObj) {
+		containerObj.classList.add("d-none");
+	}
+};
 
 btnClose.addEventListener("click", function () {
 	containerObj.classList.add("d-none");
